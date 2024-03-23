@@ -1,22 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<%@ page import=" java.io.*" %>
-<%@ page import="javax.servlet.*"%>
-<%@ page import="javax.servlet.http.*"%>
+<%
+
+   Cookie username = new Cookie("username",
+ 			  request.getParameter("username"));
+   Cookie email = new Cookie("email",
+			  request.getParameter("email"));
+
+
+   username.setMaxAge(60*60*10);
+   email.setMaxAge(60*60*10);
+
+   // Add both the cookies in the response header.
+   response.addCookie( username );
+   response.addCookie( email );
+%>
+
 
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cookies Example</title>
-    </head>
-    <body>
-        <% String s = (String) request.getParameter("inp"); %>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guru Cookie JSP</title>
+</head>
+<body>
 
-        <h1><%= s %></h1>
-        <% Cookie ck[]=request.getCookies(); %>
-        <h1>
-            <%= ck[0].getValue() %>
-        </h1>
+<b>Username:</b>
+   <%= request.getParameter("username")%>
+<b>Email:</b>
+   <%= request.getParameter("email")%>
 
-    </body>
+</body>
 </html>

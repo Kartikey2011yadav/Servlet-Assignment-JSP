@@ -7,13 +7,12 @@
         <title>Cookies Example</title>
     </head>
     <body>
-        <%
-            Cookies ck = new Cookie("value","hello this is cookie");
-            response.addCookie(ck);
-        %>
-        <form action="CookiesBack.jsp" method="get">
-            Enter response:<input type="text" name="inp"/><br/>
-            <input type="submit" value="go"/>
+
+        <form action="CookiesBack.jsp" method="POST">
+        Username: <input type="text" name="username">
+        <br />
+        Email: <input type="text" name="email" />
+        <input type="submit" value="Submit" />
         </form>
     </body>
 </html>
