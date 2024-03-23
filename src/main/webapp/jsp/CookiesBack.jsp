@@ -27,7 +27,6 @@ response.addCookie( email );
     <h2>HttpSession Example</h2>
     <p>Fill out the form below</p>
 </div>
-
 <b>Username: </b>
 <%= request.getParameter("username")%>
 <br>
