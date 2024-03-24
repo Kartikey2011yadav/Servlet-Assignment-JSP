@@ -8,9 +8,6 @@
 
 <body>
 <jsp:include page="../Template/header.jsp"/>
-<%
-String back = "";
-%>
 <div class="sub-head-w3-agileits">
     <h2>URL Rewriting Example</h2>
     <p>Click on the link below</p>

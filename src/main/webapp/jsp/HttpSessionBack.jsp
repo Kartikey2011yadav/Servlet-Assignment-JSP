@@ -13,7 +13,7 @@ session.setAttribute("email",email);
 <html>
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
-    <title>Guru Cookie JSP</title>
+    <title>HttpSession Example</title>
 </head>
 <body>
 <jsp:include page="../Template/header.jsp"/>
