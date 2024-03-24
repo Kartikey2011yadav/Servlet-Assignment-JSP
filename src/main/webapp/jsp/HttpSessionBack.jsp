@@ -17,9 +17,6 @@ session.setAttribute("email",email);
 </head>
 <body>
 <jsp:include page="../Template/header.jsp"/>
-<%
-back = "HttpSessionFront.jsp";
-%>
 <div class="sub-head-w3-agileits">
     <h2>HttpSession Example</h2>
     <p>Fill out the form below</p>
@@ -30,6 +27,6 @@ back = "HttpSessionFront.jsp";
 <br>
 <b>Email:</b>
 <%= (String)session.getAttribute("email")%>
-<jsp:include page="../Template/footer.jsp"/>
+<jsp:include page="../Template/footer.jsp?back=HttpSessionFront.jsp"/>
 </body>
 </html>

@@ -23,9 +23,6 @@ response.addCookie( email );
 </head>
 <body>
 <jsp:include page="../Template/header.jsp"/>
-<%
-back = "CookiesFront.jsp";
-%>
 <div class="sub-head-w3-agileits">
     <h2>HttpSession Example</h2>
     <p>Fill out the form below</p>
@@ -35,6 +32,6 @@ back = "CookiesFront.jsp";
 <br>
 <b>Email: </b>
 <%= request.getParameter("email")%>
-<jsp:include page="../Template/footer.jsp"/>
+<jsp:include page="../Template/footer.jsp?back=CookiesFront.jsp"/>
 </body>
 </html>
