@@ -19,7 +19,7 @@ session.setAttribute("email",email);
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
     <h2>HttpSession Example</h2>
-    <p>Fill out the form below</p>
+    <p>HttpSession output</p>
 </div>
 
 <b>Username:</b>
@@ -27,6 +27,9 @@ session.setAttribute("email",email);
 <br>
 <b>Email:</b>
 <%= (String)session.getAttribute("email")%>
+<br>
+<b>To Remove Cookie </b>
+<a href='HttpSessionDel.jsp'><u>click here<u></a>
 <jsp:include page="../Template/footer.jsp?back=HttpSessionFront.jsp"/>
 </body>
 </html>

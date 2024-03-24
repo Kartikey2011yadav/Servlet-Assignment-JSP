@@ -13,6 +13,7 @@ email.setMaxAge(60*60*10);
 // Add both the cookies in the response header.
 response.addCookie( username );
 response.addCookie( email );
+Cookie ck[] = request.getCookies();
 %>
 
 
@@ -24,14 +25,17 @@ response.addCookie( email );
 <body>
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
-    <h2>HttpSession Example</h2>
+    <h2>Cookie Example</h2>
     <p>Fill out the form below</p>
 </div>
 <b>Username: </b>
-<%= request.getParameter("username")%>
+<%= ck[0].getValue()%>
 <br>
 <b>Email: </b>
-<%= request.getParameter("email")%>
+<%= ck[1].getValue()%>
+<br>
+<b>To Remove Cookie </b>
+<a href='CookiesDel.jsp'><u>click here<u></a>
 <jsp:include page="../Template/footer.jsp?back=CookiesFront.jsp"/>
 </body>
 </html>
