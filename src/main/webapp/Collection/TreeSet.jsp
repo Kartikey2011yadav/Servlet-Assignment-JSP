@@ -1,0 +1,21 @@
+<div>
+    <%@ page import="java.util.*" %>
+    <h1>TreeSet</h1>
+    <div>
+        <%
+        TreeSet<Integer> s=new TreeSet<>();
+        s.add(10);
+        s.add(5);
+        s.add(3);
+        s.add(9);
+        %>
+        TreeSet: <%=s %><br>
+        Element Removed: 3<br>
+        <% s.remove(3); %>
+        TreeSet Now: <%=s %><br>
+        First Element: <%=s.first() %><br>
+        Last Element: <%=s.last() %><br>
+        Floor(7): <%=s.floor(7) %><br>
+        Ceiling(7): <%=s.ceiling(7) %>
+    </div>
+</div>
