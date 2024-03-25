@@ -16,7 +16,10 @@
     Username: <input name="username" type="text">
     <br/>
     Email: <input name="email" type="text"/>
+    <div>
     <input type="submit" value="Submit"/>
+    <input type="reset" value="Clear"/>
+    </div>
 </form>
 <jsp:include page="../Template/footer.jsp"/>
 </body>

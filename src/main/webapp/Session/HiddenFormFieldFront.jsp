@@ -22,7 +22,10 @@
     Hidden Field:<br>
     <input type='hidden' name='message' value='Hello This is Hidden Form Field'>
     <br>
+    <div>
     <input type="submit" value="Submit"/>
+    <input type="reset" value="Clear"/>
+    </div>
     <br>
 </form>
 <jsp:include page="../Template/footer.jsp"/>

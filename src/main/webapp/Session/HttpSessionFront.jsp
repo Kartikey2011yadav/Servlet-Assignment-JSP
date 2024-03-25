@@ -19,7 +19,10 @@
     Email: <br>
     <input name="email" type="text"/>
     <br>
+    <div>
     <input type="submit" value="Submit"/>
+    <input type="reset" value="Clear"/>
+    </div>
     <br>
 </form>
 <jsp:include page="../Template/footer.jsp"/>
