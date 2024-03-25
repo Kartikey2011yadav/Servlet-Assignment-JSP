@@ -14,15 +14,7 @@
     </head>
     <body>
     <%
-        String method = request.getMethod();
-        if ("POST".equals(method))
-        {
-            String id=request.getParameter("sid");
-            Statement stat_del=conn.createStatement();
-            String query_del="delete from Student where ID='"+id+"';";
-            stat_del.executeUpdate(query_del);
-        }
-        ResultSet rs=stat.executeQuery("select * from student;");
+        ResultSet rs=stat.executeQuery("select * from Student;");
     %>
     <center>
     <h1>
@@ -33,7 +25,7 @@
             <tr>
                 <td><b>Student ID</b></td>
                 <td><b>Name</b></td>
-                <td><b>Age</b></td>
+                <td><b>Interest</b></td>
                 <td><b>Delete</b></td>
             </tr>
         <%
@@ -42,9 +34,9 @@
             <tr>
                 <td scope="row"><b><%=rs.getString("ID")%></b></td>
                 <td scope="row"><b><%=rs.getString("NAME")%></b></td>
-                <td scope="row"><b><%=rs.getString("AGE")%></b></td>
+                <td scope="row"><b><%=rs.getString("INTEREST")%></b></td>
                 <td scope="row">
-                    <form method="POST" action="/Servlet-Assignment-JSP/JDBC/Delete.jsp">
+                    <form method="POST" action="/Servlet-Assignment-JSP/JDBC/DeleteBack.jsp">
                         <button class="btn btn-danger" type="submit" name="sid" value="<%=rs.getString("ID")%>">Delete</button>
                     </form>
                 </td>

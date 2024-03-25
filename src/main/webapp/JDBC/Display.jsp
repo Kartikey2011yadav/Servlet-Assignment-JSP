@@ -6,7 +6,7 @@
     conn = JDBCConn.getConn();
     Statement stat=conn.createStatement();
 
-    ResultSet rs=stat.executeQuery("select * from student;");
+    ResultSet rs=stat.executeQuery("select * from Student;");
 %>
 <html>
     <head>
@@ -22,7 +22,7 @@
             <tr>
                 <td><b>Student ID</b></td>
                 <td><b>Name</b></td>
-                <td><b>Age</b></td>
+                <td><b>Interest</b></td>
             </tr>
         <%
             while(rs.next()){
@@ -30,7 +30,7 @@
             <tr>
                 <td scope="row"><b><%=rs.getString("ID")%></b></td>
                 <td scope="row"><b><%=rs.getString("NAME")%></b></td>
-                <td scope="row"><b><%=rs.getString("AGE")%></b></td>
+                <td scope="row"><b><%=rs.getString("INTEREST")%></b></td>
             </tr>
         <%
             }

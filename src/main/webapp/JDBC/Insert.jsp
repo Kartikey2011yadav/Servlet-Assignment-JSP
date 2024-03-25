@@ -17,18 +17,7 @@
     <title>Insert</title>
 </head>
 <body>
-    <%
-        Connection conn = JDBCConn.getConn();
-        stmt=conn.createStatement();
-        String method = request.getMethod();
 
-        if ("POST".equals(method)) {
-            String name=request.getParameter("name");
-            String sid=request.getParameter("sid");
-            int age=Integer.parseInt(request.getParameter("age"));
-            stmt.executeUpdate("INSERT INTO Student(ID,NAME,AGE) VALUES('"+sid+"','"+name+"',"+age+");");
-        }
-    %>
     <div class="container">
         </br>
         </br>
@@ -37,12 +26,12 @@
                 Student Information Form
             </h1>
         </center>
-        <form method="POST" action="/Servlet-Assignment-JSP/JDBC/Insert.jsp">
-            <input class="form-control form-control-lg" name="sid" type="text" placeholder="Student ID" aria-label=".form-control-lg example">
+        <form method="POST" action="/Servlet-Assignment-JSP/JDBC/Insert_Back.jsp">
+            <input class="form-control form-control-lg" name="sid" type="text" placeholder="Student ID" required aria-label=".form-control-lg example">
             </br>
-            <input class="form-control form-control-lg" name="name" type="text" placeholder="Name" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="name" type="text" placeholder="Name" required aria-label=".form-control-lg example">
             </br>
-            <input class="form-control form-control-lg" name="age" type="int" placeholder="Age" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="age" type="text" placeholder="Interest" required aria-label=".form-control-lg example">
             </br>
             <center>
                 <button type="submit" class="btn btn-primary">
