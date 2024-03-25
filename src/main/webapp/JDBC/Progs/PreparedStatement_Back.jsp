@@ -10,11 +10,11 @@
         {
             String name=request.getParameter("name");
             String sid=request.getParameter("sid");
-            int age=Integer.parseInt(request.getParameter("age"));
-            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO Student(ID, NAME, AGE) VALUES (?, ?, ?)");
+            String Interest=request.getParameter("Interest");
+            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO Student(ID, NAME, INTEREST) VALUES (?, ?, ?)");
             pstmt.setString(1, sid);
             pstmt.setString(2, name);
-            pstmt.setInt(3, age);
+            pstmt.setString(3, Interest);
             pstmt.executeUpdate();
             response.sendRedirect("/Servlet-Assignment-JSP/JDBC/PreparedStatement.jsp");
         }

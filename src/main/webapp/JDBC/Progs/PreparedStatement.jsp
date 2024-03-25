@@ -27,11 +27,11 @@
             </h1>
         </center>
         <form method="POST" action="/Servlet-Assignment-JSP/JDBC/PreparedStatement_Back.jsp">
-            <input class="form-control form-control-lg" name="sid" type="text" placeholder="Student ID" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="sid" type="text" placeholder="Student ID" required aria-label=".form-control-lg example">
             </br>
-            <input class="form-control form-control-lg" name="name" type="text" placeholder="Name" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="name" type="text" placeholder="Name" required aria-label=".form-control-lg example">
             </br>
-            <input class="form-control form-control-lg" name="age" type="int" placeholder="Age" aria-label=".form-control-lg example">
+            <input class="form-control form-control-lg" name="Interest" type="text" placeholder="Insert" required aria-label=".form-control-lg example">
             </br>
             <center>
                 <button type="submit" class="btn btn-primary">

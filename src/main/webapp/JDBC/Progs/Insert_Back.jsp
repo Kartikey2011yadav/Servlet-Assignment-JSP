@@ -10,8 +10,8 @@
         {
             String name=request.getParameter("name");
             String sid=request.getParameter("sid");
-            int age=Integer.parseInt(request.getParameter("age"));
-            stmt.executeUpdate("INSERT INTO Student(ID,NAME,AGE) VALUES('"+sid+"','"+name+"',"+age+");");
+            String Interest=request.getParameter("Interest");
+            stmt.executeUpdate("INSERT INTO Student(ID,NAME,INTEREST) VALUES('"+sid+"','"+name+"',"+Interest+");");
             response.sendRedirect("/Servlet-Assignment-JSP/JDBC/Insert.jsp");
         }
         else
