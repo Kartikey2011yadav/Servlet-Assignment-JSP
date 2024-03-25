@@ -1,0 +1,20 @@
+/*Patterns*/
+.pattern-left{
+      transform: translateX(45%);
+}
+
+.pattern-right{
+      transform: translateX(-45%);
+}
+
+.pattern-left center h3{
+    text-align: left;
+}
+
+.pattern-right center h3{
+    text-align: right;
+}
+
+.pattern center h3{
+    font-size: 35px;
+}
