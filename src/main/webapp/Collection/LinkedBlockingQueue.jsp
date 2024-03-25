@@ -4,13 +4,13 @@
     <div>
         <%
         LinkedBlockingQueue<String> q=new LinkedBlockingQueue<>();
-        q.add("Tanishq");
-        q.add("Mehrunkar");
-        q.add("IT-2K21-63");
+        q.add("Kartikey");
+        q.add("Yadav");
+        q.add("IT-2K21-25");
         %>
         LinkedBlockingQueue: <%=q %><br>
-        Element Removed: Tanishq<br>
-        <% q.remove("Tanishq"); %>
+        Element Removed: Yadav<br>
+        <% q.remove("Yadav"); %>
         LinkedBlockingQueue Now: <%=q %>
     </div>
 </div>

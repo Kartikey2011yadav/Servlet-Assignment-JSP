@@ -4,9 +4,9 @@
     <div>
         <%
         Stack<String> s=new Stack<>();
-        s.push("Tanishq");
-        s.push("Mehrunkar");
-        s.push("IT-2K21-63");
+        s.push("Kartikey");
+        s.push("Yadav");
+        s.push("IT-2K21-25");
         %>
         Stack: <%=s %><br>
         Element Popped: <%=s.peek() %><br>

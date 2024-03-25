@@ -4,13 +4,13 @@
     <div>
         <%
         SortedSet<String> s=new TreeSet<>();
-        s.add("Tanishq");
-        s.add("Mehrunkar");
-        s.add("IT-2K21-63");
+        s.add("Kartikey");
+        s.add("Yadav");
+        s.add("IT-2K21-25");
         %>
         SortedSet: <%=s %><br>
-        Element Removed: Mehrunkar<br>
-        <% s.remove("Mehrunkar"); %>
+        Element Removed: Yadav<br>
+        <% s.remove("Yadav"); %>
         SortedSet Now: <%=s %><br>
         First Element: <%=s.first() %><br>
         Last Element: <%=s.last() %>

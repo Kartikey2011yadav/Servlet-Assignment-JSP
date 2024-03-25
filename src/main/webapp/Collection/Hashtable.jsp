@@ -4,9 +4,9 @@
     <div>
         <%
         Hashtable<String,String> t=new Hashtable<>();
-        t.put("First Name","Tanishq");
-        t.put("Last Name","Mehrunkar");
-        t.put("Roll No","IT-2K21-63");
+        t.put("First Name","Kartikey");
+        t.put("Last Name","Yadav");
+        t.put("Roll No","IT-2K21-25");
         %>
         Hashtable: <%=t %><br>
         Element Removed: <%=t.get("Roll No") %><br>

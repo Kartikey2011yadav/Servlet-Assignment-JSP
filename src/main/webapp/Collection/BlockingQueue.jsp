@@ -4,13 +4,13 @@
     <div>
         <%
         BlockingQueue<String> q=new PriorityBlockingQueue<>();
-        q.add("Tanishq");
-        q.add("Mehrunkar");
-        q.add("IT-2K21-63");
+        q.add("Kartikey");
+        q.add("Yadav");
+        q.add("IT-2K21-25");
         %>
         BlockingQueue: <%=q %><br>
-        Element Removed: Tanishq<br>
-        <% q.remove("Tanishq"); %>
+        Element Removed: <%= q.peek()%><br>
+        <% q.remove(); %>
         BlockingQueue Now: <%=q %>
     </div>
 </div>

@@ -4,8 +4,8 @@
     <div>
         <%
         List<String> l=new ArrayList<>();
-        l.add("Tanishq");
-        l.add("Mehrunkar");
+        l.add("Kartikey");
+        l.add("Yadav");
         %>
         List: <%=l %><br>
         Element Removed: <%=l.get(0) %><br>

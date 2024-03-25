@@ -4,9 +4,9 @@
     <div>
         <%
         Map<String,String> m=new HashMap<>();
-        m.put("First Name","Tanishq");
-        m.put("Last Name","Mehrunkar");
-        m.put("Roll No","IT-2K21-63");
+        m.put("First Name","Kartikey");
+        m.put("Last Name","Yadav");
+        m.put("Roll No","IT-2K21-25");
         %>
         Map: <%=m %><br>
         Element Removed: <%=m.get("Roll No") %><br>

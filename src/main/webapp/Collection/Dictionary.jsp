@@ -4,9 +4,9 @@
     <div>
         <%
         Dictionary<String,String> d=new Hashtable<>();
-        d.put("First Name","Tanishq");
-        d.put("Last Name","Mehrunkar");
-        d.put("Roll No","IT-2K21-63");
+        d.put("First Name","Kartikey");
+        d.put("Last Name","Yadav");
+        d.put("Roll No","IT-2K21-25");
         %>
         Dictionary: <%=d %><br>
         Element Removed: <%=d.get("First Name") %><br>

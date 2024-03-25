@@ -4,9 +4,9 @@
     <div>
         <%
         LinkedList<String> l=new LinkedList<>();
-        l.add("Tanishq");
-        l.add("Mehrunkar");
-        l.add("IT-2K21-63");
+        l.add("Kartikey");
+        l.add("Yadav");
+        l.add("IT-2K21-25");
         %>
         LinkedList: <%=l %><br>
         Element Removed: <%=l.get(2) %><br>

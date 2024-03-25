@@ -4,13 +4,13 @@
     <div>
         <%
         LinkedHashSet<String> s=new LinkedHashSet<>();
-        s.add("Tanishq");
-        s.add("Mehrunkar");
-        s.add("IT-2K21-63");
+        s.add("Kartikey");
+        s.add("Yadav");
+        s.add("IT-2K21-25");
         %>
         LinkedHashSet: <%=s %><br>
-        Element Removed: Tanishq<br>
-        <% s.remove("Tanishq"); %>
+        Element Removed: Kartikey<br>
+        <% s.remove("Kartikey"); %>
         LinkedHashSet Now: <%=s %>
     </div>
 </div>

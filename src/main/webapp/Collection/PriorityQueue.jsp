@@ -4,9 +4,9 @@
     <div>
         <%
         PriorityQueue<String> q=new PriorityQueue<>();
-        q.add("Tanishq");
-        q.add("Mehrunkar");
-        q.add("IT-2K21-63");
+        q.add("Kartikey");
+        q.add("Yadav");
+        q.add("IT-2K21-25");
         %>
         PriorityQueue: <%=q %><br>
         Element Removed: <%=q.peek() %><br>
