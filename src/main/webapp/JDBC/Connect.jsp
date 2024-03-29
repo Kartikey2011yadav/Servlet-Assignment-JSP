@@ -14,8 +14,8 @@
     <body>
     <jsp:include page="../Template/header.jsp"/>
     <div class="sub-head-w3-agileits">
-        <h2>Alphabet Diamond Example</h2>
-        <p>Alphabet Diamond Pattern</p>
+        <h2>JDBC Connection</h2>
+        <p>JDBC Connection Test</p>
     </div>
     <div class="pattern">
     <% if(conn!=null)

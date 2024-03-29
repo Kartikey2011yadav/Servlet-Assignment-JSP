@@ -19,8 +19,8 @@ ResultSet rs=stat.executeQuery("select * from Student;");
 %>
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
-    <h2>Alphabet Diamond Example</h2>
-    <p>Alphabet Diamond Pattern</p>
+    <h2>JDBC</h2>
+    <p>Database record deletion</p>
 </div>
 <div class="container">
     <table>

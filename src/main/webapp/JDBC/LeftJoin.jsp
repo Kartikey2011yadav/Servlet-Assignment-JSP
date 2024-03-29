@@ -17,8 +17,8 @@
     <body>
     <jsp:include page="../Template/header.jsp"/>
     <div class="sub-head-w3-agileits">
-        <h2>Alphabet Diamond Example</h2>
-        <p>Alphabet Diamond Pattern</p>
+        <h2>Display Records</h2>
+        <p>Implement Left Join JDBC</p>
     </div>
     <br>
     <div class="container">

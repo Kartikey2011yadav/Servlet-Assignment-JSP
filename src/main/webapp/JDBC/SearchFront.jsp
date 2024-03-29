@@ -18,8 +18,8 @@
 <body>
     <jsp:include page="../Template/header.jsp"/>
     <div class="sub-head-w3-agileits">
-        <h2>Image Display</h2>
-        <p>Enter The Student ID</p>
+        <h2>View Records</h2>
+        <p>Display Searched records JDBC</p>
     </div>
         <form method="POST" action="SearchBack.jsp">
             <input name="sid" type="text" placeholder="Student ID">
