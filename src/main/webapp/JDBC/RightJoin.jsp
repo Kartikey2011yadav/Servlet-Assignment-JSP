@@ -9,34 +9,41 @@
 %>
 <html>
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>JDBC</title>
     </head>
     <body>
-    <center>
-    <h1>
-        Right Join Table
-    </h1>
-
-        <table class="table container">
+    <jsp:include page="../Template/header.jsp"/>
+    <div class="sub-head-w3-agileits">
+        <h2>Alphabet Diamond Example</h2>
+        <p>Alphabet Diamond Pattern</p>
+    </div>
+    <br>
+    <div class="container">
+        <table>
+            <thead>
             <tr>
                 <td><b>Student ID</b></td>
                 <td><b>Name</b></td>
                 <td><b>Age</b></td>
                 <td><b>Course</b></td>
             </tr>
+            </thead>
         <%
             while(rs.next()){
         %>
             <tr>
                 <td scope="row"><b><%=rs.getString("ID")%></b></td>
                 <td scope="row"><b><%=rs.getString("NAME")%></b></td>
-                <td scope="row"><b><%=rs.getString("AGE")%></b></td>
-                <td scope="row"><b><%=rs.getString("COURSE")%></b></td>
+                <td scope="row"><b><%=rs.getString("INTEREST")%></b></td>
+                <td scope="row"><b><%=rs.getString("TITLE")%></b></td>
             </tr>
         <%
             }
         %>
         </table>
-        </center>
+    </div>
+    <jsp:include page="../Template/footer.jsp"/>
     </body>
 </html>

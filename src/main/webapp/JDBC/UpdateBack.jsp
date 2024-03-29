@@ -9,17 +9,17 @@
         if ("POST".equals(method)) {
             String name=request.getParameter("name");
             String sid=request.getParameter("sid");
-            int age=Integer.parseInt(request.getParameter("age"));
-            String query = "UPDATE Student SET NAME=?, AGE=? WHERE ID=?";
+            String interest=request.getParameter("interest");
+            String query = "UPDATE Student SET NAME=?, INTEREST=? WHERE ID=?";
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setString(1, name);
-            ps.setInt(2, age);
+            ps.setString(2, interest);
             ps.setString(3, sid);
             ps.executeUpdate();
-            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/Update.jsp");
+            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/UpdateFront.jsp");
         }
         else
         {
-            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/Update.jsp");
+            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/UpdateFront.jsp");
         }
     %>

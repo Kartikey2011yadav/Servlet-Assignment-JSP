@@ -10,12 +10,16 @@
         {
             String name=request.getParameter("name");
             String sid=request.getParameter("sid");
-            String Interest=request.getParameter("Interest");
-            stmt.executeUpdate("INSERT INTO Student(ID,NAME,INTEREST) VALUES('"+sid+"','"+name+"',"+Interest+");");
-            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/Insert.jsp");
+            String Interest=request.getParameter("interest");
+            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO Student(ID, NAME, INTEREST) VALUES (?, ?, ?)");
+            pstmt.setString(1, sid);
+            pstmt.setString(2, name);
+            pstmt.setString(3, Interest);
+            pstmt.executeUpdate();
+            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/PreparedStatementFront.jsp");
         }
         else
         {
-            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/Insert.jsp");
+            response.sendRedirect("/Servlet-Assignment-JSP/JDBC/PreparedStatementFront.jsp");
         }
     %>
