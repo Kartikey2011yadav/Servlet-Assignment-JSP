@@ -10,11 +10,16 @@
 %>
 <html>
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>JDBC</title>
     </head>
     <body>
-
-    <center>
+    <jsp:include page="../Template/header.jsp"/>
+    <div class="sub-head-w3-agileits">
+        <h2>Alphabet Diamond Example</h2>
+        <p>Alphabet Diamond Pattern</p>
+    </div>
     <%
             String method = request.getMethod();
             if ("POST".equals(method))
@@ -25,9 +30,11 @@
                 stat_del.executeUpdate(query_del);
             }
     %>
-    <h1 style="color:green">
-        Deleted successfully
-    </h1>
-    </center>
+    <div class="pattern">
+    <h3>
+        Record Successfully Deleted !!!
+    </h3>
+    </div>
+    <jsp:include page="../Template/footer.jsp?back=DeleteFront.jsp"/>
     </body>
 </html>

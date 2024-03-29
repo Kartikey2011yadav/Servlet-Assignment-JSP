@@ -6,27 +6,35 @@
     conn = JDBCConn.getConn();
 %>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>JDBC</title>
+    </head>
     <body>
-        <% if(conn!=null)
-        {
-        %>
-        <center>
-              <h1 style="color:green">
-                Connected successfully
-              </h1>
-         </center>
-        <%
-        }
-        else{
-        %>
-        <center>
-            <h1 style="color:red">
-                 Connection Not Established
-            </h1>
-        </center>
-        <%
-        }
-        %>
-
+    <jsp:include page="../Template/header.jsp"/>
+    <div class="sub-head-w3-agileits">
+        <h2>Alphabet Diamond Example</h2>
+        <p>Alphabet Diamond Pattern</p>
+    </div>
+    <div class="pattern">
+    <% if(conn!=null)
+            {
+            %>
+                  <h3 style="color:green">
+                    Connected successfully
+                  </h3>
+            <%
+            }
+            else{
+            %>
+                <h3 style="color:red">
+                     Connection Not Established
+                </h3>
+            <%
+            }
+            %>
+    </div>
+    <jsp:include page="../Template/footer.jsp"/>
     </body>
 </html>

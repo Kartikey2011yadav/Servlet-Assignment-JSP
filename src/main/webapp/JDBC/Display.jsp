@@ -10,20 +10,26 @@
 %>
 <html>
     <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>JDBC</title>
     </head>
     <body>
-    <center>
-    <h1>
-        Student Table
-    </h1>
-
-        <table class="table container">
+    <jsp:include page="../Template/header.jsp"/>
+    <div class="sub-head-w3-agileits">
+        <h2>Alphabet Diamond Example</h2>
+        <p>Alphabet Diamond Pattern</p>
+    </div>
+    <br>
+    <div class="container">
+        <table>
+            <thead>
             <tr>
-                <td><b>Student ID</b></td>
-                <td><b>Name</b></td>
-                <td><b>Interest</b></td>
+                <th><b>Student ID</b></th>
+                <th><b>Name</b></th>
+                <th><b>Interest</b></th>
             </tr>
+            </thead>
         <%
             while(rs.next()){
         %>
@@ -36,6 +42,7 @@
             }
         %>
         </table>
-        </center>
+    </div>
+    <jsp:include page="../Template/footer.jsp"/>
     </body>
 </html>

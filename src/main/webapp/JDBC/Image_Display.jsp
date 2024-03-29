@@ -15,22 +15,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Image Display</title>
 </head>
 <body>
-    <div class="container">
-        <br>
-        <br>
-        <center>
-            <h1>Image Display</h1>
-        </center>
+    <jsp:include page="../Template/header.jsp"/>
+    <div class="sub-head-w3-agileits">
+        <h2>Image Display</h2>
+        <p>Enter The Student ID</p>
+    </div>
         <form method="POST" action="">
-            <input class="form-control form-control-lg" name="id" type="text" placeholder="Student ID" aria-label=".form-control-lg example">
+            <input name="id" type="text" placeholder="Student ID">
             <br>
-            <center>
-                <button type="submit" class="btn btn-primary">Display Image</button>
-            </center>
+            <div>
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Clear"/>
+            </div>
+            <br>
         </form>
 
         <%
@@ -61,5 +61,6 @@
             }
         %>
     </div>
+    <jsp:include page="../Template/footer.jsp"/>
 </body>
 </html>
