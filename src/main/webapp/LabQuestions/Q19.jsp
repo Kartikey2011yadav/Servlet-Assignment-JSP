@@ -10,21 +10,12 @@
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
     <h2>Lab Questions</h2>
-    <p>Advance Java Lab Assignment Questions</p>
+    <p>Question: Write an application that finds the substring from any given string using substring method and startsWith & endsWith methods. </p>
 </div>
 <form action="Q18" method="get">
-    <div class="field">
-       <div class="fas fa-envelope"></div>
-       <input type="text" placeholder="Enter string" name="str">
-    </div>
-    <div class="field">
-       <div class="fas fa-envelope"></div>
-       <input type="number" placeholder="Beginning Index" name="sw">
-    </div>
-    <div class="field">
-       <div class="fas fa-envelope"></div>
-       <input type="number" placeholder="Ending Index" name="ew">
-    </div>
+    <input type="text" placeholder="Enter string" name="str">
+    <input type="text" placeholder="Beginning Index" name="sw">
+    <input type="text" placeholder="Ending Index" name="ew">
     <div>
     <input type="submit" value="Submit"/>
     <input type="reset" value="Clear"/>
