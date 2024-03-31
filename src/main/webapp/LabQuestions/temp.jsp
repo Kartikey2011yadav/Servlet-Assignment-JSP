@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page info="hola" %>
 
 <html>
 <head>
@@ -13,8 +14,8 @@
     <p>Advance Java Lab Assignment Questions</p>
 </div>
 <div class="pattern">
-
-
+<%= this.getAttribute("info")
+%>
 </div>
 <jsp:include page="../Template/footer.jsp"/>
 </body>
