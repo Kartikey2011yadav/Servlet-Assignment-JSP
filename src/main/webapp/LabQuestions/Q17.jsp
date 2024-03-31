@@ -10,7 +10,7 @@
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
     <h2>Lab Questions</h2>
-    <p>Advance Java Lab Assignment Questions</p>
+    <p>an application that uses String method charAt to reverse the string</p>
 </div>
 <form action="Q17" method="get">
     <div class="field">
