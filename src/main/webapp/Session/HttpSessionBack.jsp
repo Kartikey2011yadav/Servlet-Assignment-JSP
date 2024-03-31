@@ -5,7 +5,8 @@ String name = request.getParameter("username");
 String email = request.getParameter("email");
 
 // Add both the inputs to the Session.
-session.setAttribute("user",name);
+HttpSession s = request.getSession();
+s.setAttribute("user",name);
 session.setAttribute("email",email);
 %>
 
