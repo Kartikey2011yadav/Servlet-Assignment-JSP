@@ -10,7 +10,7 @@
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
     <h2>Lab Questions</h2>
-    <p>Advance Java Lab Assignment Questions</p>
+    <p>Write an application that finds the length of a given string.</p>
 </div>
 <form action="Q16" method="get">
     <div class="field">
