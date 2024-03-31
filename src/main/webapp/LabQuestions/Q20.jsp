@@ -10,7 +10,7 @@
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
     <h2>Lab Questions</h2>
-    <p>Advance Java Lab Assignment Questions</p>
+    <p>Question: Write an application that changes any given string with uppercase letters, displays it , changes it back to lowercase letters and displays it.</p>
 </div>
 <form action="Q20" method="get">
     <div class="field">
