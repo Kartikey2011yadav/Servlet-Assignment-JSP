@@ -19,6 +19,12 @@ public class Q20 extends HttpServlet {
         String lows = "";
 
         PrintWriter pw = resp.getWriter();
+        upps = str.toUpperCase();
+        lows = str.toLowerCase();
+
+        pw.println("Original String: " + str);
+        pw.println("Uppercase String: " + upps);
+        pw.println("Lowercase String: " + lows);
     }
 }
 

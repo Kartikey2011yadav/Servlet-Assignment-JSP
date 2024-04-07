@@ -12,10 +12,10 @@
     <h2>Lab Questions</h2>
     <p>Question: Write an application that finds the substring from any given string using substring method and startsWith & endsWith methods. </p>
 </div>
-<form action="Q18" method="get">
+<form action="Q19" method="get">
     <input type="text" placeholder="Enter string" name="str">
-    <input type="text" placeholder="Beginning Index" name="sw">
-    <input type="text" placeholder="Ending Index" name="ew">
+    <input type="text" placeholder="Beginning Index Char" name="sw">
+    <input type="text" placeholder="Ending Index Char" name="ew">
     <div>
     <input type="submit" value="Submit"/>
     <input type="reset" value="Clear"/>
