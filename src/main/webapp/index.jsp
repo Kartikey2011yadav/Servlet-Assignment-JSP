@@ -53,13 +53,21 @@
             </li>
             <li><div>MAP</div>
               <ul>
-                <li><a href=""><div>item 1</div></a></li>
-                <li><a href=""><div>item 2</div></a></li>
+                <li><a href=""><div>Map</div></a></li>
+                <li><a href=""><div>Hash Map</div></a></li>
+                <li><a href=""><div>Linked Hash Map</div></a></li>
+                <li><a href=""><div>Weak Hash Map</div></a></li>
+                <li><a href=""><div>Identity Hash Map</div></a></li>
+                <li><a href=""><div>Sorted Map</div></a></li>
+                <li><a href=""><div>Navigable Map</div></a></li>
+                <li><a href=""><div>Tree Map</div></a></li>
+                <li><a href=""><div>Hash Table</div></a></li>
+                <li><a href=""><div>Dictionary</div></a></li>
+                <li><a href=""><div>Priorities</div></a></li>
               </ul>
             </li>
           </ul>
         </li>
-        <li><div class="sticky">Reptiles</div></a></li>
         <li><div class="sticky">Birds</div></a></li>
           <ul>
             <li><div>Elephant</div>
