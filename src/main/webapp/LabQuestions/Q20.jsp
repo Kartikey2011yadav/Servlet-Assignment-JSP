@@ -15,7 +15,7 @@
 <form action="Q20" method="get">
     <div class="field">
        <div class="fas fa-envelope"></div>
-       <input type="text" placeholder="Enter string" name="str">
+       <input type="text" required placeholder="Enter string" name="str">
     </div>
     <div>
     <input type="submit" value="Submit"/>
