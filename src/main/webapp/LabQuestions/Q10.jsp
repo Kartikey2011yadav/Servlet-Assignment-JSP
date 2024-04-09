@@ -13,8 +13,7 @@
     <p>Advance Java Lab Assignment Questions</p>
 </div>
 <form action="Q10" method="get">
-Principle:
-    <br>
+Principle:<br>
     <input type="text" name="principal">
     <div>
     <input type="submit" value="Submit"/>
