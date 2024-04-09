@@ -1,11 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-
-<!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+    <title>URL Rewriting</title>
 </head>
-
 <body>
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
@@ -14,7 +11,5 @@
 </div>
 <a href='URLRewritingBack.jsp?message="hello this is URL Rewriting Example"'>click me</a>
 <jsp:include page="../Template/footer.jsp"/>
-
-
 </body>
 </html>

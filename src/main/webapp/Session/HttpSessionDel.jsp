@@ -3,8 +3,6 @@
 // remove Session
 session.invalidate();
 %>
-
-
 <html>
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
@@ -14,9 +12,8 @@ session.invalidate();
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
     <h2>HttpSession Example</h2>
-    <p>HttpSession output</p>
+    <p>HttpSession Deleted</p>
 </div>
-
 <b>Session destroyed Successfully</b>
 <jsp:include page="../Template/footer.jsp?back=HttpSessionFront.jsp"/>
 </body>

@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%
     Cookie[] cookies = request.getCookies();
-
     // removing cookies
     for(int i = 0; i < cookies.length; i++) {
         if (cookies[i].getName().equals("username") || cookies[i].getName().equals("email")) {

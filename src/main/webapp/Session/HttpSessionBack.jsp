@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%
-
 String name = request.getParameter("username");
 String email = request.getParameter("email");
 
@@ -9,8 +8,6 @@ HttpSession s = request.getSession();
 s.setAttribute("user",name);
 session.setAttribute("email",email);
 %>
-
-
 <html>
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
@@ -22,13 +19,10 @@ session.setAttribute("email",email);
     <h2>HttpSession Example</h2>
     <p>HttpSession output</p>
 </div>
-
 <b>Username:</b>
-<%= (String)session.getAttribute("user")%>
-<br>
+<%= (String)session.getAttribute("user")%><br>
 <b>Email:</b>
-<%= (String)session.getAttribute("email")%>
-<br>
+<%= (String)session.getAttribute("email")%><br>
 <b>To Remove Cookie </b>
 <a href='HttpSessionDel.jsp'><u>click here<u></a>
 <jsp:include page="../Template/footer.jsp?back=HttpSessionFront.jsp"/>

@@ -1,11 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-
-<!DOCTYPE html>
 <html>
 <head>
-    <title>My Website</title>
+    <title>Hidden Form Field</title>
 </head>
-
 <body>
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
@@ -14,14 +11,11 @@
 </div>
 <form action="HiddenFormFieldBack.jsp" method="POST">
     Username:
-    <input name="username" type="text">
-    <br>
+    <input name="username" type="text"><br>
     Email: <br>
-    <input name="email" type="text"/>
-    <br>
+    <input name="email" type="text"/><br>
     Hidden Field:<br>
-    <input type='hidden' name='message' value='Hello This is Hidden Form Field'>
-    <br>
+    <input type='hidden' name='message' value='Hello This is Hidden Form Field'><br>
     <div>
     <input type="submit" value="Submit"/>
     <input type="reset" value="Clear"/>

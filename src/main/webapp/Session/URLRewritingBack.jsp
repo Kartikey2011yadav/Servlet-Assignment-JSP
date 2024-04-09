@@ -1,15 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%
-
 String name = request.getParameter("username");
 String email = request.getParameter("email");
-
 // Add both the inputs to the Session.
 session.setAttribute("user",name);
 session.setAttribute("email",email);
 %>
-
-
 <html>
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
@@ -21,12 +17,10 @@ session.setAttribute("email",email);
     <h2>URL Rewriting Example</h2>
     <p>output</p>
 </div>
-
 <b>Message: </b>
 <%
     //getting value from the query string
     String n=request.getParameter("message");
-
 %>
 <%= n %>
 <jsp:include page="../Template/footer.jsp?back=URLRewritingFront.jsp"/>
