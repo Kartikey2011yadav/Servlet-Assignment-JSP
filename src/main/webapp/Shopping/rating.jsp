@@ -10,10 +10,8 @@
     }
     </style>
   </head>
-
 <%! int   ratingsCount = 0;
     int[] ratings  = new int[6]; %>
-  
 <body>
 <jsp:include page="../Template/header.jsp"/>
 <div class="sub-head-w3-agileits">
@@ -37,7 +35,6 @@
       </td></tr>
       </table>
     </form>
-  
     <%  String  rating = request.getParameter("rating"); //get the "GET" parameter, i.e., the form result
         int     ratingInt   = -1;
         if (rating != null) {//if the page is not loaded because of form submit, rating will be null      
@@ -52,7 +49,6 @@
             ratings[ratingInt - 1]++;
             ratingsCount++;
     %>
-  
     <h2>Ratings</h2>  
     <p>So far <%= ratingsCount%> valid ratings have been issued.</p>
       <table border="1">
@@ -70,7 +66,6 @@
           <% } // for%>
         </tr>
       </table>
-    
     <% } } } // if%>
 </div>
 <jsp:include page="../Template/footer.jsp"/>
