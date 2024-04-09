@@ -31,9 +31,7 @@
                 <h3 style="color:red">
                      Connection Not Established
                 </h3>
-            <%
-            }
-            %>
+            <% } %>
     </div>
     <jsp:include page="../Template/footer.jsp"/>
     </body>

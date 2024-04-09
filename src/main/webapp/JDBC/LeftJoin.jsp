@@ -4,7 +4,6 @@
 <%
     Connection conn=null;
     conn = JDBCConn.getConn();
-
     Statement stat=conn.createStatement();
     ResultSet rs=stat.executeQuery("select * from Student as s left join Course as c on s.ID=c.ID;");
 %>

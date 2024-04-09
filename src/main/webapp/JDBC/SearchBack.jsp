@@ -26,8 +26,7 @@
     <div class="sub-head-w3-agileits">
         <h2>View Records</h2>
         <p>Display Searched records JDBC</p>
-    </div>
-    <br>
+    </div><br>
     <div class="container">
         <table>
             <thead>

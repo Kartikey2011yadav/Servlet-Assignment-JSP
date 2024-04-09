@@ -2,11 +2,9 @@
 <%@ page import="java.sql.*" %>
 <%@ page import="main.webapp.JDBC.conn.JDBCConn" %>
 <%
-
     Connection conn=null;
     conn = JDBCConn.getConn();
     Statement stat=conn.createStatement();
-
 %>
 <html>
     <head>

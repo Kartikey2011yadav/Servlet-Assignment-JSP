@@ -22,14 +22,11 @@
     </div>
         <form method="POST" action="InsertBack.jsp">
             Student ID:
-            <input name="sid" type="text">
-            <br>
+            <input name="sid" type="text"><br>
             Student Name:
-            <input name="name" type="text">
-            <br>
+            <input name="name" type="text"><br>
             Student Interest:
-            <input name="interest" type="text">
-            <br>
+            <input name="interest" type="text"><br>
             <div>
                 <input type="submit" value="Submit"/>
                 <input type="reset" value="Clear"/>

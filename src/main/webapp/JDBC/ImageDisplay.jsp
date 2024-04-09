@@ -4,13 +4,11 @@
 <%@ page import="java.awt.image.BufferedImage" %>
 <%@ page import="javax.imageio.ImageIO" %>
 <%@ page import="java.io.*"%>
-
 <%
     Connection conn = null;
     Statement stmt = null;
     ResultSet rs = null;
 %>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +30,6 @@
             </div>
             <br>
         </form>
-
         <%
             String str_id = request.getParameter("id");
             if (str_id != null && !str_id.isEmpty()) {

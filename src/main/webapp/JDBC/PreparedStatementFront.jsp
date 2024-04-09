@@ -2,12 +2,10 @@
 <%@ page import="main.webapp.JDBC.conn.JDBCConn" %>
 <%@ page import="java.sql.*" %>
   <%
-
      Statement stmt = null;
      ResultSet rs = null;
      String user = "root";
   %>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,19 +20,15 @@
     </div>
         <form method="POST" action="PreparedStatementBack.jsp">
             Student ID:
-            <input name="sid" type="text">
-            <br>
+            <input name="sid" type="text"><br>
             Student Name:
-            <input name="name" type="text">
-            <br>
+            <input name="name" type="text"><br>
             Student Interest:
-            <input name="interest" type="text">
-            <br>
+            <input name="interest" type="text"><br>
             <div>
                 <input type="submit" value="Submit"/>
                 <input type="reset" value="Clear"/>
-            </div>
-            <br>
+            </div><br>
         </form>
     </div>
     <jsp:include page="../Template/footer.jsp"/>

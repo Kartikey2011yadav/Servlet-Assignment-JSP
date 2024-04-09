@@ -1,14 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="java.sql.*" %>
 <%@ page import="main.webapp.JDBC.conn.JDBCConn" %>
-
-
 <%
     Connection conn = null;
     Statement stmt = null;
     ResultSet rs = null;
 %>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
