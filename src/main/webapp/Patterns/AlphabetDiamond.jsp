@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -31,15 +30,11 @@
               break;
          }
      }
-
       // construct diamond
       for (int i = 0; i <= letter_number; i++) {
       diamond[i] = "";
-
-
       // add letter
       diamond[i] += letter[i];
-
       // add space between letters
       if (letter[i] != 'A') {
          for (int j = 0; j < 2 * i - 1; j++)
@@ -58,7 +53,6 @@
           // Writing the diamondArray in reverse order
           %><%=diamond[i] %><br><%
       }
-
 %>
 </h3>
 </center>

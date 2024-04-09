@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -21,25 +20,19 @@
             'W', 'X', 'Y', 'Z' };
     int letter_number = 0;
     String[] diamond = new String[26]; // array of strings
-
      char user_letter = 'F';
      // search for letter number in the array letter
-
      for (int i = 0; i < letter.length; i++) {
          if (letter[i] == user_letter) {
               letter_number = i;
               break;
          }
      }
-
       // construct diamond
       for (int i = 0; i <= letter_number; i++) {
       diamond[i] = "";
-
-
       // add letter
       diamond[i] += letter[i];
-
       // add space between letters
       if (letter[i] != 'A') {
          for (int j = 0; j < 2 * i - 1; j++)
@@ -58,7 +51,6 @@
           // Writing the diamondArray in reverse order
           %><%=diamond[i] %><br><%
       }
-
 %>
 </h3>
 </center>
