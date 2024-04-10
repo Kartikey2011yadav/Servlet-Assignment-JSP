@@ -43,9 +43,9 @@
                         Blob blob = rs.getBlob("image");
                         InputStream inputStream = blob.getBinaryStream();
                         BufferedImage image = ImageIO.read(inputStream);
-                        response.setContentType("image/jpeg");
+                        response.setContentType("image/png");
                         OutputStream outputStream = response.getOutputStream();
-                        ImageIO.write(image, "jpg", outputStream);
+                        ImageIO.write(image, "png", outputStream);
                     }
                     else
                     {

@@ -7,6 +7,7 @@
     <option>Mouse</option>
     <option>Jacket</option>
   </select>
+  <br>
   <input type=submit name="submit" value="add">
   <input type=submit name="submit" value="remove">
 </form>
