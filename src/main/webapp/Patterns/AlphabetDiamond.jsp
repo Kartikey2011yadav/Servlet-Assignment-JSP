@@ -39,7 +39,7 @@
       if (letter[i] != 'A') {
          for (int j = 0; j < 2 * i - 1; j++)
          {
-            diamond[i] += "&nbsp&nbsp;&nbsp;&nbsp;";
+            diamond[i] += "&nbsp;&nbsp;&nbsp;&nbsp;";
          }
             // add letter
             diamond[i] += letter[i];
